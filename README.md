@@ -1,4 +1,4 @@
-# framework-ca
+# ca-framework
 
 Goal
 To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
@@ -33,3 +33,9 @@ Share this Pull Request and request peer review
 Discuss and implement the feedback gathered from peer review
 Share this Pull Request with a teacher for their approval
 Complete the approved Pull Request, or implement the required changes
+Delivery
+For peer review, please submit a link to your repository to the Moodle forum. You should review 2 of your peers’ submissions.
+
+Please submit your public GitHub repository URL along with any supplementary files such as wireframes. Your repo should have an active PR that the teachers will review.
+
+Design files will not be included in your grade but help to provide additional context to the marker.
