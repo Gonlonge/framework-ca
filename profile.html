@@ -7,64 +7,147 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Profile</title>
   </head>
-  <head></head>
   <body>
-    <div class="header-menu">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <header>
+      <div class="header-menu">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary shadow-lg">
+          <img
+            class="profile-picture mx-2 rounded"
+            src="images/profile-pic.png"
+            alt="profile picture"
+          />
+          <a class="navbar-brand" href="home.html">SosialMeets</a>
+          <button
+            class="navbar-toggler d-lg-none mx-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-2" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html"
+                  >Feed <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current-page" href="#">Profile</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Menu</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="login.html">Log Out</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0 primary-button mx-2"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+
+      <div>
         <img
-          class="profile-picture mx-2"
           src="images/profile-pic.png"
+          class="rounded mx-auto d-block mt-4 shadow-lg"
           alt="profile picture"
         />
-        <a class="navbar-brand" href="home.html">SosialMeets</a>
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        ></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html"
-                >Home <span class="visually-hidden">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link current-page" href="#">Profile</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdownId"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Menu</a
-              >
-              <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="login.html">Log Out</a>
-              </div>
-            </li>
-          </ul>
-          <form class="d-flex my-2 my-lg-0">
-            <input
-              class="form-control me-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </nav>
-    </div>
-    <p>profile</p>
+      </div>
+    </header>
+    <section class="mt-5">
+      <div class="main-container container">
+        <h1>profile</h1>
+        <p>Name: Lorem</p>
+        <p>Gender: Lorem ipusm</p>
+        <p>Age: 99</p>
+        <p>City: Lorem</p>
+        <p>
+          About me: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Labore eos recusandae. consectetur adipisicing elit.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="text-center col-md-8 main-container container">
+        <h2 class="mt-5">My Post</h2>
+
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+        <img
+          src="images/profile-pic.png"
+          class="m-1 rounded thumbnail-padding shadow-lg"
+          alt="my pictures"
+        />
+      </div>
+    </section>
+    <footer>
+      <div class="text-center mt-5 bg-primary py-4">
+        Contact
+        <p>gonlonge@icloud.com</p>
+      </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>

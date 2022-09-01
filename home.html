@@ -7,108 +7,330 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
-<header>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-      <img
-        class="profile-picture mx-3"
-        src="images/profile-pic.png"
-        alt="profile picture"
-      />
-      <a class="navbar-brand" href="home.html">SosialMeets</a>
-      <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      ></button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link current-page" href="#"
-              >Home <span class="visually-hidden">(current)</span></a
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary shadow-lg">
+        <img
+          class="profile-picture mx-2 rounded"
+          src="images/profile-pic.png"
+          alt="profile picture"
+        />
+        <a class="navbar-brand" href="home.html">SosialMeets</a>
+        <button
+          class="navbar-toggler d-lg-none mx-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-2" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link current-page" href="#"
+                >Feed<span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Menu</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="login.html">Log Out</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button
+              class="btn btn-outline-success my-2 my-sm-0 primary-button mx-2"
+              type="submit"
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile.html">Profile</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdownId"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Menu</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="login.html">Log Out</a>
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+  
+      <section class="container main-container">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <h1>Post</h1>
+          </label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          >Share your day...</textarea>
+        </div>
+      </section>
+
+      <h2 class="text-center mt-4">Your Feed</h2>
+      <div class="container main-container">
+        <div class="row">
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="images/profile-pic.png"
+                    class="shadow-lg card-img-top rounded"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">
+                      Text from the post. Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Earum numquam et autem.
+                    </p>
+                    <a href="#" class="btn btn-primary">Profile</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              
+
+
+
+              
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="images/profile-pic.png"
+                        class="shadow-lg card-img-top rounded"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Name</h5>
+                        <p class="card-text">
+                          Text from the post. Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Earum numquam et autem.
+                        </p>
+                        <a href="#" class="btn btn-primary">Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
-        <form class="d-flex my-2 my-lg-0">
-          <input
-            class="form-control me-sm-2"
-            type="text"
-            placeholder="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
-    <div>
-      <img
-        src="images/profile-pic.png"
-        class="rounded mx-auto d-block mt-4 shadow-lg"
-        alt="profile picture"
-      />
-    </div>
-    <section class="mx-3 mt-5">
-      <h1>Informaton</h1>
-      <p>Name: Lorem</p></p>
-      <p>Gender: Lorem ipusm</p></p>
-      <p>Age: 11</p>
-      <p>City: Lorem</p>
-      <p>About me: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos recusandae.</p>
     </section>
-    <section> 
-    <h2 class="ms-3 mt-5">Friends</h2>
-    <div class="row text-center">
-      <div class="col">
-        <img src="images/profile-pic.png" class="rounded">
-      </div>
-      <div class="col">
-        <img src="images/profile-pic.png" class="rounded">
-      </div>
-      <div class="col">
-        <img src="images/profile-pic.png" class="rounded">
+
+    <div class="container main-container mt-4">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/profile-pic.png"
+                  class="shadow-lg card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">
+                    Text from the post. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Earum numquam et autem.
+                  </p>
+                  <a href="#" class="btn btn-primary">Profile</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            
+
+
+
+            
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="images/profile-pic.png"
+                      class="shadow-lg card-img-top rounded"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Name</h5>
+                      <p class="card-text">
+                        Text from the post. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Earum numquam et autem.
+                      </p>
+                      <a href="#" class="btn btn-primary">Profile</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-      <footer>
-        <div class="card text-center mt-5">
-          <div class="card-header bg-primary">
-            Contact
+
+
+ 
+
+
+  <div class="container main-container mt-4">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/profile-pic.png"
+                class="shadow-lg card-img-top rounded"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <p class="card-text">
+                  Text from the post. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Earum numquam et autem.
+                </p>
+                <a href="#" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
           </div>
-          <div class="card-body bg-primary">
-            <p class="card-text">gonlonge@icloud.com</p>
-  </footer>
-
-      <!-- <a href="#" class="btn btn-primary">Mail</a> -->
 
 
-      </a>
+
+
+          
+
+
+
+          
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="images/profile-pic.png"
+                    class="shadow-lg card-img-top rounded"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">
+                      Text from the post. Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Earum numquam et autem.
+                    </p>
+                    <a href="#" class="btn btn-primary">Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
   </div>
+</section>
+
+
+
+<div class="container main-container mt-4">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img
+              src="images/profile-pic.png"
+              class="shadow-lg card-img-top rounded"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Name</h5>
+              <p class="card-text">
+                Text from the post. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Earum numquam et autem.
+              </p>
+              <a href="#" class="btn btn-primary">Profile</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        
+
+
+
+        
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="images/profile-pic.png"
+                  class="shadow-lg card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <p class="card-text">
+                    Text from the post. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Earum numquam et autem.
+                  </p>
+                  <a href="#" class="btn btn-primary">Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="text-center mt-5 bg-primary py-4">
+        Contact
+        <p>gonlonge@icloud.com</p>
+      </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
