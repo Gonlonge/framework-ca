@@ -11,6 +11,23 @@ $tertiary: #e6e3e3;
 
 @import "../node_modules/bootstrap/scss/functions";
 
+/* fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat" serif, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+p,
+a {
+  font-family: "Roboto" serif, Arial, Helvetica, sans-serif;
+}
+
 /* body */
 
 .main-container {
@@ -19,6 +36,10 @@ $tertiary: #e6e3e3;
 
 .profile-picture {
   max-width: 10%;
+}
+
+.profile-picture-followers {
+  max-width: 14%;
 }
 
 .current-page {
