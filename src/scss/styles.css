@@ -12558,11 +12558,4 @@ a:hover {
 .main-background {
   background-color: #e7044c;
 }
-
-@media (min-width: 769px) {
-  .main-background {
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
